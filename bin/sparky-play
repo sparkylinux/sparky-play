@@ -1,0 +1,117 @@
+#!/bin/bash
+## Desenvolvido por Raimundo Portela - <rai3mb@gmail.com>
+## Adapted and incremented by Elton <eltonfabricio10@gmail.com> 2019/02/03
+##---------------------------------------------------------------------------
+## Sparky Play
+## Sob a licença GNU GPL v3
+# Last update 2019/02/10 by pavroo
+
+# get default's locale file
+DEFLOCDIR="/usr/share/sparky/sparky-play"
+if [ "`cat /etc/default/locale | grep pl`" != "" ]; then
+. $DEFLOCDIR/pl
+elif [ "`cat /etc/default/locale | grep pt_BR`" != "" ]; then
+. $DEFLOCDIR/pt_BR
+else
+. $DEFLOCDIR/en
+fi
+
+YAD="yad --center --window-icon=mpv --width=500 --height=100 --title="
+ENTRY="--entry"
+RICON="--ricon=gtk-clear --ricon-action=echo "
+BUTCAN="--button=gtk-cancel:1"
+BUTSEA="--button=gtk-find:0"
+BUTCLOSE="--button=gtk-close:1"
+BUTSTOP="--button=gtk-media-stop:0"
+TITLE="Sparky Play MP3"
+FORM="--form"
+COLUMNS="--columns="
+FIELD="--field="
+IMAGE="--image-on-top --image=mpv --text="
+FOCUS="--focus-field="
+
+## functions
+## function error 
+function _void(){
+		rm -rf /tmp/tmp.txt
+		rm -rf /tmp/list_music.list
+		$YAD"$TITLE" $IMAGE"$LOCAL3" $BUTCLOSE
+		_main
+}
+
+# funciton search music - directory
+function _search() {
+	if FORM_SEARCH=$($YAD"$TITLE" $IMAGE"$LOCAL2" \
+					$FORM $FOCUS"1" \
+					$FIELD:LBL $FIELD:LBL \
+					$FIELD$LOCAL9 \
+					$FIELD:LBL $FIELD:LBL \
+					$FIELD$LOCAL10:DIR \
+					$FIELD:LBL $FIELD:LBL \
+					$BUTCAN $BUTSEA)
+	then
+		FORM_TXT=$(echo $FORM_SEARCH | cut -d "|" -f3)
+		FORM_DIR=$(echo $FORM_SEARCH | cut -d "|" -f6)
+		[ -z "$FORM_TXT" ] && _void
+		echo -n > "$LIST"
+		find "$FORM_DIR" -iname "*${FORM_TXT}*.mp3" -exec echo "{}" >> "$LIST" \;
+		mv "$LIST" "/tmp/tmp.txt"
+		echo -n > "$LIST"
+		while read MUSIC
+		do 
+			echo "$MUSIC: \"${MUSIC##/*/}\"" >> "$LIST"
+		done < "/tmp/tmp.txt"
+		#killall tail
+		[[ -z `cat "$LIST"` ]] && _void				
+		_main
+	else
+		rm -rf /tmp/tmp.txt
+		rm -rf /tmp/list_music.list
+		exit 1
+	fi	
+}
+
+# function play file - selected or external
+function _play() {
+	if pgrep -x "ffplay" > /dev/null
+	then
+		$YAD"$TITLE" $IMAGE"$LOCAL7" $BUTSTOP $BUTCLOSE
+		if [ "$?" = "0" ]	
+		then
+			killall -9 ffplay
+		fi		
+	else
+	    EXTERN="$*"
+		MUSICS=$(cat "$LIST" | grep "$1" | cut -d : -f1)
+		[ -z "$MUSICS"] && ffplay -nodisp -loop 0 "$EXTERN" || ffplay -nodisp -loop 0 "$MUSICS"
+	fi	 
+}
+
+## function selected music
+function _main() {
+	if [ ! -f "$LIST" ]; then
+		export LIST="/tmp/list_music.list"
+		_search
+	fi
+	COMBO=$(cat "$LIST" | cut -d ':' -f2 | sort | tr '\n' '!')
+	if $YAD"$TITLE" $IMAGE"$LOCAL5" $FORM $COLUMNS"3" \
+		$FIELD$LOCAL6:CB "$COMBO" \
+		$FIELD$LOCAL8:BTN "/usr/bin/sparky-play play %1" \
+		$FIELD'gtk-media-stop':BTN "killall -9 ffplay" \
+		$BUTCLOSE $BUTSEA
+	then
+		killall -9 ffplay
+		_search
+	fi
+	killall -9 ffplay
+	rm -rf /tmp/tmp.txt
+	rm -rf /tmp/list_music.list
+	exit 0
+}
+
+case "$1" in
+	'search') shift; _search "$*" ;;
+	'play') shift; _play "$*" ;;
+	*) _main ;;
+esac
+

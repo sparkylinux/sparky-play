@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Sparky Play MP3
+GenericName=Sparky Play MP3
+Comment=Play MP3 Music
+Comment[pl]=Graj Muzykę MP3
+Comment[pt_BR]=Reproduzir Músicas em MP3
+Type=Application
+Terminal=false
+Exec=/usr/bin/sparky-play
+Icon=mpv
+Keywords=video;internet;download;youtube
+Categories=GTK;AudioVideo;Player;Video;
