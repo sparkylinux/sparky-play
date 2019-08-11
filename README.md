@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 Dependencies:
 -------------
 coreutils
-ffplay | ffmpeg (<= 10:4.1.2)
+ffmpeg
 grep
 procps
 psmisc
