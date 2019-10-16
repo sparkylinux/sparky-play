@@ -1,0 +1,18 @@
+# Hungarian localization file for Sparky Play. (Translated by Nemomen)
+# Under license GNU GPL v3
+#
+# LOCAL8 only translate the word "Play"
+#
+LOCAL1="Keresés kulcs-szóval:"
+LOCAL2="Írja be a zene nevét vagy egy kulcs-szót a Kiválasztott (Selected) könyvtárban való kereséshez \mint *-ot az összes MP3 fájljához."
+LOCAL3="\nVigyázat!\n\n- Ön nem írt be zene nevet vagy kulcs-szót.\n- Ezen névvel nem található zene.\n- A kiválasztott könyvtár nem tartalmaz mp3 fájlokat.\n\n Kilépés..."
+LOCAL4="Zenéinek keresése (folyamatban)...\nKérjük, várjon..."
+LOCAL5="Válassza ki a zenét, amelyet le kíván játszani!:"
+LOCAL6="<b>Zene</b>"
+LOCAL7="A kiválasztott zeneszám már lejátszás alatt van!\nMit akar tenni?"
+LOCAL8="Lejátszás!player_play"
+LOCAL9="Kulcsszó:"
+LOCAL10="Könyvtár:"
+#
+#
+# Comment=Play MP3 Music
