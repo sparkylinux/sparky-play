@@ -1,0 +1,18 @@
+# English localization file for Sparky Play.
+# Under license GNU GPL v3
+#
+# LOCAL8 only translate the word "Play"
+#
+LOCAL1="Searching with the keyword:"
+LOCAL2="Enter a music name or a keyword to search Selected directory \nor type * to find all MP3 files you have."
+LOCAL3="\nAttention!\n\n- You did not typed the music name or keyword.\n- The music could not be found with this name.\n- The selected directory does not contain mp3 files.\n\n Exiting..."
+LOCAL4="Searching your musics...\nPlease wait..."
+LOCAL5="Select the music you want to play:"
+LOCAL6="<b>Music</b>"
+LOCAL7="The selected music is already playing!\nWhat do you want to do?"
+LOCAL8="Play!player_play"
+LOCAL9="Keyword:"
+LOCAL10="Directory:"
+#
+#
+# Comment=Play MP3 Music

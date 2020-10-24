@@ -1,0 +1,19 @@
+# Polish localization file for Sparky Play.
+# Under license GNU GPL v3
+# Translated by pavroo 2019/02/04
+#
+# LOCAL8 only translate the word "Play"
+#
+LOCAL1="Szukanie po słowie kluczowym:"
+LOCAL2="Wpisz nazwę utworu lub słowo kluczowe aby przeszukać Wybrany katalog \nlub wpisz * aby znaleźć wszystkie twoje pliki MP3."
+LOCAL3="\nUwaga!\n\n- Nie wpisałeś nazwy utworu ani słowa kluczowego.\n- Nie można znaleźć utworu muzycznego po wprowadzonej nazwie.\n- Wybrany folder nie zawiera plików MP3.\n\n Wyjście..."
+LOCAL4="Szukanie twojego utworu...\nProszę czekać..."
+LOCAL5="Wybierz utwór, który chcesz odtworzyć:"
+LOCAL6="<b>Muzyka</b>"
+LOCAL7="Wybrany utwór jest właśnie odtwarzany!\nCo chcesz teraz zrobić?"
+LOCAL8="Graj!player_play"
+LOCAL9="Słowo kluczowe:"
+LOCAL10="Katalog:"
+#
+#
+# Comment=Graj Muzykę MP3

@@ -1,0 +1,16 @@
+﻿# Fichier de localisation française de Sparky Play.
+# Copyright 2016 hiver <hiver@club-internet.fr> 2019/03/12
+# Sous licence GNU GPL v3
+#
+LOCAL1="Recherche à partir du mot clé:"
+LOCAL2="Entrez un nom de morceau ou un mot clé pour chercher dans le répertoire sélectionné \nou tapez * pour trouver tous vos fichiers MP3."
+LOCAL3="\nAttention!\n\n- Vous n'avez pas tapé de nom de morceau ou de mot clé.\n- Un morceau avec ce nom ne peut être trouvé.\n- le répertoire sélectionné ne contient pas de fichier MP3.\n\n Sortie..."
+LOCAL4="Recherche de vos morceaux...\nPatientez s'il vous plaît..."
+LOCAL5="Sélectionnez le morceau que vous voulez jouer:"
+LOCAL6="<b>Morceau</b>"
+LOCAL7="Je joue déjà le morceau sélectionné!\nQue voulez-vous faire?"
+LOCAL8="Jouer!player_play"
+LOCAL9="Mot clé:"
+LOCAL10="Répertoire:"
+#
+# Comment[fr_FR]=Jouer des fichiers MP3

@@ -1,0 +1,16 @@
+# Arquivo de localização para o Português do Brasil do Sparky Play.
+# Sob a licença GNU GPL v3
+#
+LOCAL1="Pesquisando com a palavra chave:"
+LOCAL2="Insira o nome da música ou uma palavra-chave para pesquisar no diretório selecionado \nou digite * para encontrar todos os arquivos MP3 que você tem."
+LOCAL3="\nAtenção!\n\n- Você não digitou o nome da música ou a palavra chave.\n- A música não foi encontrada com esse nome.\n- O diretório selecionado não contém arquivos mp3.\n\nSaindo..."
+LOCAL4="Pesquisando suas músicas...\n Por favor, aguarde..."
+LOCAL5="Selecione a música desejada para reproduzir:"
+LOCAL6="<b>Música:</b>"
+LOCAL7="A música selecionada já está sendo reproduzida!\nO que você deseja fazer?"
+LOCAL8="Reproduzir!player_play" 
+LOCAL9="Palavra-chave:"
+LOCAL10="Diretório:"
+#
+#
+# Comment[pt_BR]=Reproduzir Músicas MP3

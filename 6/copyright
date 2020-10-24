@@ -1,0 +1,56 @@
+Upstream Author(s): 
+    Paweł "pavroo" Pijanowski <pavroo@onet.eu>
+
+Files: *    
+Copyright (C):
+    Raimundo Portela - <rai3mb@gmail.com>
+    Elton <eltonfabricio10@gmail.com> 2019/02/03
+    pavroo <pavroo@onet.eu> 2019
+    License: GPL-3
+
+File: el
+    Copyright 2019 jidan
+    License: GNU GPL-3
+
+File: fr
+    Copyright (C) 2019 hiver <hiver@club-internet.fr>
+    License: GPL-3
+
+File: hu
+    Copyright 2019 Nemomen
+    License: GNU GPL-3
+
+File: it
+    Copyright (C) 2019 carlo "malato" <abbassolafrangetta@gmail.com>
+    License: GPL-3
+
+File: pl
+    Copyright (C) 2019 pavroo <pavroo@onet.eu>
+    License: GPL-3
+
+File: pt_BR
+    Copyright (C) 2019 Elton Fabricio Ferreira
+    License: GPL-3
+
+File: ru
+    Copyright 2019 ChourS2008
+    License: GNU GPL-3
+
+License:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+ 
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+ 
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL'.
