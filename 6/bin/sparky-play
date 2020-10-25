@@ -4,7 +4,7 @@
 ##---------------------------------------------------------------------------
 ## Sparky Play
 ## Sob a licença GNU GPL v3
-# Last update 2020/10/24 by pavroo
+# Last update 2020/10/25 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-play"
@@ -29,10 +29,10 @@ fi
 YAD="yad --center --window-icon=mpv --width=500 --height=100 --title="
 ENTRY="--entry"
 #RICON="--ricon=gtk-clear --ricon-action=echo "
-BUTCAN="--button=Cancel!gtk-cancel!tooltip:1"
-BUTSEA="--button=Find!gtk-find!tooltip:0"
-BUTCLOSE="--button=Close!gtk-close!tooltip:1"
-BUTSTOP="--button=Stop!gtk-media-stop!tooltip:0"
+BUTCAN="--button=Cancel!gtk-cancel!Cancel:1"
+BUTSEA="--button=Find!gtk-find!Find:0"
+BUTCLOSE="--button=Close!gtk-close!Close:1"
+BUTSTOP="--button=Stop!gtk-media-stop!Stop:0"
 TITLE="Sparky Play MP3"
 FORM="--form"
 #COLUMNS="--columns"
@@ -59,11 +59,11 @@ function _void(){
 function _search() {
 	if FORM_SEARCH=$($YAD"$TITLE" $IMAGE"$LOCAL2" \
 					$FORM $FOCUS"1" \
-					$FIELD!tooltip:LBL $FIELD!tooltip:LBL \
-					$FIELD$LOCAL9!tooltip \
-					$FIELD!tooltip:LBL $FIELD!tooltip:LBL \
-					$FIELD$LOCAL10!tooltip:DIR \
-					$FIELD!tooltip:LBL $FIELD!tooltip:LBL \
+					$FIELD:LBL $FIELD:LBL \
+					$FIELD$LOCAL9 \
+					$FIELD:LBL $FIELD:LBL \
+					$FIELD$LOCAL10:DIR \
+					$FIELD:LBL $FIELD:LBL \
 					$BUTCAN $BUTSEA)
 	then
 		FORM_TXT=$(echo $FORM_SEARCH | cut -d "|" -f3)
@@ -111,9 +111,9 @@ function _main() {
 	fi
 	COMBO=$(cat "$LIST" | cut -d ':' -f2 | sort | tr '\n' '!')
 	if $YAD"$TITLE" $IMAGE"$LOCAL5" $FORM --columns=3 \
-		$FIELD"$LOCAL6!tooltip":CB "$COMBO" \
-		$FIELD"$LOCAL8!tooltip":BTN "/usr/bin/sparky-play play %1" \
-		$FIELD"Stop!gtk-media-stop!tooltip":BTN "killall -9 ffplay" \
+		$FIELD"$LOCAL6":CB "$COMBO" \
+		$FIELD"$LOCAL8":BTN "/usr/bin/sparky-play play %1" \
+		$FIELD"Stop!gtk-media-stop!Stop":BTN "killall -9 ffplay" \
 		$BUTCLOSE $BUTSEA
 	then
 		killall -9 ffplay
