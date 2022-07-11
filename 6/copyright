@@ -5,11 +5,15 @@ Files: *
 Copyright (C):
     Raimundo Portela - <rai3mb@gmail.com>
     Elton <eltonfabricio10@gmail.com> 2019/02/03
-    pavroo <pavroo@onet.eu> 2019
+    pavroo <pavroo@onet.eu> 2019-2022
     License: GPL-3
 
 File: el
     Copyright 2019 jidan
+    License: GNU GPL-3
+
+File: es
+    Copyright 2022 depaz
     License: GNU GPL-3
 
 File: fr
@@ -22,6 +26,7 @@ File: hu
 
 File: it
     Copyright (C) 2019 carlo "malato" <abbassolafrangetta@gmail.com>
+    Copyright 2022 Yodel Sinatra <mastodon.uno/@YodelSinatra>
     License: GPL-3
 
 File: pl

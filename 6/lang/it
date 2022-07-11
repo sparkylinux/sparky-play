@@ -1,15 +1,16 @@
 # File di localizzazione in italiano per Sparky Play.
+# copyright 2022, Yodel Sinatra <mastodon.uno/@YodelSinatra> 2022/05/18
 # Rilasciato sotto licenza GNU GPL v3
 #
 # LOCAL8 only translate the word "Play"
 #
 LOCAL1="Sto cercando con la parola chiave:"
-LOCAL2="Inserisci il nome di una canzone od una parola chiave per cercare all'interno della cartella selezionata\no digita * per cercare tutti i file MP3 che hai."
-LOCAL3="\nAttenzione!\n\n- Non hai digitato il nome della canzone ne' alcuna parola chiave.\n- Non sono riuscito a trovare alcuna canzone con questo nome.\n- La cartella che hai selezionato non conteie alcun file MP3.\n\n Sto uscendo..."
+LOCAL2="Inserisci il nome di una canzone o di una parola chiave per cercare nella cartella selezionata\no digita * per cercare tutti i file MP3 che hai."
+LOCAL3="\nAttenzione!\n\n- Non hai digitato il nome della canzone né alcuna parola chiave.\n- Non sono riuscito a trovare alcuna canzone con questo nome.\n- La cartella che hai selezionato non contiene file MP3.\n\n Puoi uscire..."
 LOCAL4="Sto cercando fra le tue canzoni...\nPer favore attendi..."
 LOCAL5="Seleziona la canzone che vuoi ascoltare:"
 LOCAL6="<b>Canzone</b>"
-LOCAL7="Stai già ascoltando la canzione che hai selezionato!\nChe vuoi fare?"
+LOCAL7="Stai già ascoltando la canzone che hai selezionato!\nChe vuoi fare?"
 LOCAL8="Riproduci!player_play"
 LOCAL9="Parola chiave:"
 LOCAL10="Cartella:"

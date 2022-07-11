@@ -4,12 +4,14 @@
 ##---------------------------------------------------------------------------
 ## Sparky Play
 ## Sob a licença GNU GPL v3
-# Last update 2020/10/25 by pavroo
+# Last update 2022/07/11 by pavroo
 
 # get default's locale file
 DEFLOCDIR="/usr/share/sparky/sparky-play"
 if [ "`cat /etc/default/locale | grep LANG= | grep el`" != "" ]; then
 . $DEFLOCDIR/el
+elif [ "`cat /etc/default/locale | grep LANG= | grep es`" != "" ]; then
+. $DEFLOCDIR/es
 elif [ "`cat /etc/default/locale | grep LANG= | grep fr`" != "" ]; then
 . $DEFLOCDIR/fr
 elif [ "`cat /etc/default/locale | grep LANG= | grep hu`" != "" ]; then

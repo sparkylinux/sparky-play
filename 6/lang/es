@@ -1,0 +1,19 @@
+# Spanish (es_ES) localization file for Sparky Play.
+# Under license GNU GPL v3
+# Translated by depaz
+#
+# LOCAL8 only translate the word "Play"
+#
+LOCAL1="Buscando por la palabra clave:"
+LOCAL2="Introduzca el nombre de su música o una palabra clave para buscar \nen el directorio escogido o escriba * para encontrar todos sus MP3."
+LOCAL3="\n¡Atención!\n\n- No escribió el nombre de su música o palabra clave.\n- No se pudo encontrar música con ese nombre.\n- El directorio escogido no contiene archivos mp3.\n\n Saliendo..."
+LOCAL4="Buscando su música...\nPor favor, espere..."
+LOCAL5="Escoja la música que quiere reproducir:"
+LOCAL6="<b>Música</b>"
+LOCAL7="¡La música escogida ya se está reproduciendo!\n¿Qué desea hacer?"
+LOCAL8="¡Reproducir!player_play"
+LOCAL9="Buscar:"
+LOCAL10="Directorio:"
+#
+#
+# Comment=Reproducir música MP3
