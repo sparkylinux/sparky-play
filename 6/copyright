@@ -5,7 +5,7 @@ Files: *
 Copyright (C):
     Raimundo Portela - <rai3mb@gmail.com>
     Elton <eltonfabricio10@gmail.com> 2019/02/03
-    pavroo <pavroo@onet.eu> 2019-2022
+    pavroo <pavroo@onet.eu> 2019-2023
     License: GPL-3
 
 File: el
@@ -39,6 +39,10 @@ File: pt_BR
 
 File: ru
     Copyright 2019 ChourS2008
+    License: GNU GPL-3
+
+File: uk
+    Copyright 2023 XalisRatt
     License: GNU GPL-3
 
 License:

@@ -8,6 +8,7 @@ Comment[it]=Riproduci canzoni formato MP3
 Comment[pl]=Graj Muzykę MP3
 Comment[pt_BR]=Reproduzir Músicas em MP3
 Comment[ru]=Воспроизведение MP3 музыки
+Comment[uk]=MP3 програвач
 Type=Application
 Terminal=false
 Exec=/usr/bin/sparky-play
