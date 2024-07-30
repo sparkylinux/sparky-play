@@ -1,0 +1,18 @@
+# Suomenkielinen lokalisointitiedosto Sparky Playlle.
+# Lisenssillä GNU GPL v3
+#
+# LOCAL8 kääntää vain sanan "Play"
+#
+LOCAL1="Haetaan avainsanalla:"
+LOCAL2="Syötä musiikin nimi tai avainsana etsiäksesi valitusta hakemistosta \tai kirjoita * löytääksesi kaikki MP3-tiedostot."
+LOCAL3="\nHuomio!\n\n- Et kirjoittanut musiikin nimeä tai avainsanaa.\n- Musiikkia ei löytynyt tällä nimellä.\n- Valittu hakemisto ei sisällä mp3-tiedostoja.\n\n Poistutaan..."
+LOCAL4="Haetaan musiikkiasi...\nOdota..."
+LOCAL5="Valitse musiikki, jota haluat soittaa:"
+LOCAL6="<b>Musiikki</b>"
+LOCAL7="Valittu musiikki soi jo!\nMitä haluat tehdä?"
+LOCAL8="Play!player_play"
+LOCAL9="Avainsana:"
+LOCAL10="Hakemisto:"
+#
+#
+# Comment=Toista MP3-musiikkia

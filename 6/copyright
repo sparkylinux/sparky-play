@@ -5,7 +5,7 @@ Files: *
 Copyright (C):
     Raimundo Portela - <rai3mb@gmail.com>
     Elton <eltonfabricio10@gmail.com> 2019/02/03
-    pavroo <pavroo@onet.eu> 2019-2023
+    pavroo <pavroo@onet.eu> 2019-2024
     License: GPL-3
 
 File: el
@@ -14,6 +14,10 @@ File: el
 
 File: es
     Copyright 2022 depaz
+    License: GNU GPL-3
+
+File: fi
+    Copyright (C) 2024 Jouko Tiilikainen
     License: GNU GPL-3
 
 File: fr
