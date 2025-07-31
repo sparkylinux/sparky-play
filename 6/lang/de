@@ -1,0 +1,18 @@
+# German localization file for Sparky Play. (aktualisiert 20.07.2025)
+# Under license GNU GPL v3
+#
+# LOCAL8 only translate the word "Play"
+#
+LOCAL1="Suche mit dem Schlüsselwort:"
+LOCAL2="Geben Sie einen Musikname oder ein Schlüsselwort ein, um das ausgewählte Verzeichnis zu durchsuchen \noder tippen Sie * ein, um alle MP3-Dateien zu finden, die Sie haben."
+LOCAL3="\nAchtung!\n\n- Sie haben den Musikname oder das Schlüsselwort nicht eingetippt.\n- Die Musik konnte nicht mit diesem Name gefunden werden.\n- Das ausgewählte Verzeichnis enthält keine mp3-Dateien.\n\n Wird beendet ..."
+LOCAL4="Durchsuchen Ihrer Musikstücke ...\nBitte warten Sie ..."
+LOCAL5="Wählen Sie die Musik aus, die Sie abspielen möchten:"
+LOCAL6="<b>Music</b>"
+LOCAL7="Die ausgewählte Musik wird bereits abgespielt!\nWas möchten Sie tun?"
+LOCAL8="Play!player_play"
+LOCAL9="Schlüsselwort:"
+LOCAL10="Verzeichnis:"
+#
+#
+# Comment=Play MP3 Music
